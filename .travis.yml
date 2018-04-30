@@ -3,7 +3,7 @@ python:
 - '3.6'
 install:
 - pip install nbconvert
-- jupyter nbconvert --to markdown --FilesWriter.build_directory=_posts ['20']*.ipynb
+- jupyter nbconvert --to markdown --FilesWriter.build_directory=_posts ['20']*.ipynb && echo "complete"
 
 deploy:
   provider: pages
